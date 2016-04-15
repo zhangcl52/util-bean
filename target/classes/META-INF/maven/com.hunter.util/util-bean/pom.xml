@@ -22,8 +22,9 @@
 		<!-- spring 集成包 -->
 		<spring_bom_version>4.2.3.RELEASE</spring_bom_version>
 		<spring_version>4.2.5.RELEASE</spring_version>
-
-
+		<!-- excel操作工具包 poi和jxl,其中jxl不支持excel07版本.只用其中一个就行 -->
+		<poi>3.14</poi>
+		<jxl>2.6.12</jxl>
 
 		<!-- Maven插件版本定义 apache-maven-3.3.3版本默认版本插件版本 -->
 		<maven_source_plugin_version>2.6</maven_source_plugin_version>
@@ -39,7 +40,7 @@
 		<dependency>
 			<groupId>net.sourceforge.jexcelapi</groupId>
 			<artifactId>jxl</artifactId>
-			<version>2.6.12</version>
+			<version>${jxl}</version>
 		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
@@ -94,6 +95,13 @@
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-expression</artifactId>
 			<version>${spring_version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>${poi}</version>
+			
 		</dependency>
 	</dependencies>
 
