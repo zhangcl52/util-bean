@@ -2,8 +2,6 @@ package com.hunter.entity;
 
 /**
  * @author zhangcl 2016年4月15日 上午8:50:00
- *
- * 
  */
 public class Cell {
     private String contents;
@@ -11,26 +9,26 @@ public class Cell {
     private int column;
 
     public String getContents() {
-	return contents;
+        return contents;
     }
 
     public void setContents(String contents) {
-	this.contents = contents;
+        this.contents = contents;
     }
 
     public int getRow() {
-	return row;
+        return row;
     }
 
     public void setRow(int row) {
-	this.row = row;
+        this.row = row;
     }
 
     public int getColumn() {
-	return column;
+        return column;
     }
 
     public void setColumn(int column) {
-	this.column = column;
+        this.column = column;
     }
 }

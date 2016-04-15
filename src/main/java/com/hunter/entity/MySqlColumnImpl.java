@@ -3,7 +3,6 @@ package com.hunter.entity;
 
 /**
  * @author zhangcl 2016年4月14日 上午21:44:00
- *
  */
 public class MySqlColumnImpl implements DBColumnInte {
     // int,tinyint,mediumint,int/integer,bigint
@@ -19,43 +18,43 @@ public class MySqlColumnImpl implements DBColumnInte {
     private String myDate;
 
     public String getMysInt() {
-	return mysInt;
+        return mysInt;
     }
 
     public void setMysInt(String mysInt) {
-	this.mysInt = mysInt;
+        this.mysInt = mysInt;
     }
 
     public String getMysFloat() {
-	return mysFloat;
+        return mysFloat;
     }
 
     public void setMysFloat(String mysFloat) {
-	this.mysFloat = mysFloat;
+        this.mysFloat = mysFloat;
     }
 
     public String getMysDouble() {
-	return mysDouble;
+        return mysDouble;
     }
 
     public void setMysDouble(String mysDouble) {
-	this.mysDouble = mysDouble;
+        this.mysDouble = mysDouble;
     }
 
     public String getMysChar() {
-	return mysChar;
+        return mysChar;
     }
 
     public void setMysChar(String mysChar) {
-	this.mysChar = mysChar;
+        this.mysChar = mysChar;
     }
 
     public String getMyDate() {
-	return myDate;
+        return myDate;
     }
 
     public void setMyDate(String myDate) {
-	this.myDate = myDate;
+        this.myDate = myDate;
     }
 
 }

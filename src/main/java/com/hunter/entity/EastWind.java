@@ -1,9 +1,7 @@
 package com.hunter.entity;
 
 /**
- * 
  * @author Administrator
- *
  */
 public class EastWind {
     // 数据库类型
@@ -22,59 +20,59 @@ public class EastWind {
     private String tableNameSplitSign;
 
     public String getDbName() {
-	return dbName;
+        return dbName;
     }
 
     public void setDbName(String dbName) {
-	this.dbName = dbName;
+        this.dbName = dbName;
     }
 
     public String getBeanSuf() {
-	return beanSuf;
+        return beanSuf;
     }
 
     public void setBeanSuf(String beanSuf) {
-	this.beanSuf = beanSuf;
+        this.beanSuf = beanSuf;
     }
 
     public String getImpClassNames() {
-	return impClassNames;
+        return impClassNames;
     }
 
     public void setImpClassNames(String impClassNames) {
-	this.impClassNames = impClassNames;
+        this.impClassNames = impClassNames;
     }
 
     public String getSourceFilePath() {
-	return sourceFilePath;
+        return sourceFilePath;
     }
 
     public void setSourceFilePath(String sourceFilePath) {
-	this.sourceFilePath = sourceFilePath;
+        this.sourceFilePath = sourceFilePath;
     }
 
     public String getStoreFilePath() {
-	return storeFilePath;
+        return storeFilePath;
     }
 
     public void setStoreFilePath(String storeFilePath) {
-	this.storeFilePath = storeFilePath;
+        this.storeFilePath = storeFilePath;
     }
 
     public int getFileType() {
-	return fileType;
+        return fileType;
     }
 
     public void setFileType(int fileType) {
-	this.fileType = fileType;
+        this.fileType = fileType;
     }
 
     public String getTableNameSplitSign() {
-	return tableNameSplitSign;
+        return tableNameSplitSign;
     }
 
     public void setTableNameSplitSign(String tableNameSplitSign) {
-	this.tableNameSplitSign = tableNameSplitSign;
+        this.tableNameSplitSign = tableNameSplitSign;
     }
 
 }
