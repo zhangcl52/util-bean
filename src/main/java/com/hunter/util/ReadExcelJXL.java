@@ -1,5 +1,6 @@
 package com.hunter.util;
 
+import com.google.common.base.Strings;
 import com.google.common.collect.Lists;
 import com.hunter.entity.Cell;
 import com.hunter.entity.ExcelRow;
@@ -23,6 +24,9 @@ public class ReadExcelJXL implements ReadExcel {
      * @return zhangcl
      */
     public List<ExcelSheet> readExcel(String filepath) {
+        if(Strings.isNullOrEmpty(filepath)){
+            return null;
+        }
         List<ExcelSheet> excelSheets = Lists.newArrayList();
         Workbook workbook = null;
         try {

@@ -1,7 +1,11 @@
 package com.hunter.util;
 
 import com.hunter.entity.ExcelSheet;
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.apache.poi.poifs.filesystem.POIFSFileSystem;
 
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.util.List;
 
 /**
@@ -16,7 +20,17 @@ public class ReadExcelPOI implements ReadExcel {
      */
     @Override
     public List<ExcelSheet> readExcel(String filepath) {
-        // TODO Auto-generated method stub
+        HSSFWorkbook wb = null;
+        POIFSFileSystem fs = null;
+        //设置要读取的文件路径
+        try {
+            fs = new POIFSFileSystem(new FileInputStream("d:\\book1.xls"));
+            //HSSFWorkbook相当于一个excel文件，HSSFWorkbook是解析excel2007之前的版本（xls）
+            //之后版本使用XSSFWorkbook（xlsx）
+            wb = new HSSFWorkbook(fs);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         return null;
     }
 
