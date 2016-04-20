@@ -16,7 +16,7 @@ import java.util.List;
 /**
  * @author zhangcl 2016年4月14日 下午11:20:10
  */
-public class ReadExcelJXL implements ReadExcel {
+public class JXLReader implements ExcelReader {
     /**
      * 获取sheets 不支持2007
      *

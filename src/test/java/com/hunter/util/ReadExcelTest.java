@@ -9,9 +9,10 @@ import com.hunter.entity.ExcelSheet;
  */
 public class ReadExcelTest {
     public static void main(String[] args) {
-        String filePath = "E:\\excelDemo\\demo.xls";
-        ReadExcel readExcelJXL = new ReadExcelJXL();
-        List<ExcelSheet> sheets = readExcelJXL.readExcel(filePath);
+        String filePath = "E:\\excelDemo\\demo.xlsx";
+//        JXLReader jxlReader = new JXLReader();
+        POIReader poiReader=new POIReader(filePath);
+        List<ExcelSheet> sheets = poiReader.readExcel(filePath);
         for (ExcelSheet sheet : sheets) {
             System.out.println(sheet.toString());
         }

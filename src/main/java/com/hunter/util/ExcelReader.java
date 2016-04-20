@@ -9,6 +9,6 @@ import com.hunter.entity.ExcelSheet;
  *
  *
  */
-public interface ReadExcel {
+public interface ExcelReader {
     public List<ExcelSheet> readExcel(String filepath);
 }
