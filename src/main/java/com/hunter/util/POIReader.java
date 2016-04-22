@@ -50,6 +50,7 @@ public class POIReader implements ExcelReader {
 
     /**
      * 读取excel
+     *
      * @return
      */
     public List<ExcelSheet> readExcel() {
@@ -89,24 +90,27 @@ public class POIReader implements ExcelReader {
     }
 
     /**
-     *  将excel中的各种类型的值转换为string类型
+     * 将excel中的各种类型的值转换为string类型
+     *
      * @param cell
      * @return String
      */
-    public String getValueOfString(org.apache.poi.ss.usermodel.Cell cell){
-        String value=null;
-        if(cell.getCellType()==cell.CELL_TYPE_STRING){
-            value=cell.getStringCellValue();
-        }else if(cell.getCellType()==cell.CELL_TYPE_BLANK){
-            value="";
-        }else if(cell.getCellType()==cell.CELL_TYPE_BOOLEAN){
-            value=cell.getBooleanCellValue()?"true":"false";
-        }else if(cell.getCellType()==cell.CELL_TYPE_ERROR){
-            value="error";
-        }else if(cell.getCellType()==cell.CELL_TYPE_FORMULA){
-            value=cell.getCellFormula();
-        }else if(cell.getCellType()==cell.CELL_TYPE_NUMERIC){
-            value= cell.getNumericCellValue()+"";
+    public String getValueOfString(org.apache.poi.ss.usermodel.Cell cell) {
+        String value = null;
+        if (cell == null) {
+            value = "";
+        } else if (cell.getCellType() == cell.CELL_TYPE_STRING) {
+            value = cell.getStringCellValue().trim();
+        } else if (cell.getCellType() == cell.CELL_TYPE_BLANK) {
+            value = "";
+        } else if (cell.getCellType() == cell.CELL_TYPE_BOOLEAN) {
+            value = cell.getBooleanCellValue() ? "true" : "false";
+        } else if (cell.getCellType() == cell.CELL_TYPE_ERROR) {
+            value = "error";
+        } else if (cell.getCellType() == cell.CELL_TYPE_FORMULA) {
+            value = cell.getCellFormula().trim();
+        } else if (cell.getCellType() == cell.CELL_TYPE_NUMERIC) {
+            value = cell.getNumericCellValue() + "".trim();
         }
         return value;
     }
