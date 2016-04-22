@@ -20,7 +20,7 @@ public class ExcelRow {
     public String toString() {
         StringBuilder sb = new StringBuilder("");
         for (Cell cell : cells) {
-            sb.append(cell.getContents().equals("") ? "11111" : cell.getContents()).append("     ");
+            sb.append(cell.getContents().equals("") ? "" : cell.getContents()).append("     ");
         }
         return sb.toString();
     }
