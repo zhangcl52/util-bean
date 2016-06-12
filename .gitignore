@@ -1,5 +1,14 @@
-/target
-.settings
+.svn
+target/
+.idea/
+*.bak
+*.iml
+*.versionsBackup
+.DS_Store
 .project
+.settings
 .classpath
-.idea
+.applicationContext-datasource.xml
+.py
+.externalToolBuilders
+
